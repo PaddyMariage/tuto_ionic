@@ -7,9 +7,48 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HistoriquePage implements OnInit {
 
+  private historique = [
+    { name:'Commande 1',
+      produits:[
+        {
+          name:'produit1'
+        },
+        {
+          name:'produit2'
+        },
+        {
+          name:'produit3'
+        }
+      ],
+      total:123
+    },
+    { name:'Commande 2',
+      produits:[
+        {
+          name:'produit1'
+        },
+        {
+          name:'produit2'
+        }
+      ],
+      total:10
+
+    },
+    { name:'Commande 3',
+      produits:[
+        {
+          name:'produit1'
+        }
+      ],
+      total:456
+    }
+  ];
   constructor() { }
 
   ngOnInit() {
   }
 
+  onLoadCommande(commande) {
+    console.log(commande)
+  }
 }

@@ -4,9 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AppareilsPageRoutingModule } from './appareils-routing.module';
-
 import { AppareilsPage } from './appareils.page';
+import {AppareilsPageRoutingModule} from "./appareils-routing.module";
 
 @NgModule({
   imports: [

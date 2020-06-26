@@ -28,6 +28,5 @@ export class AppareilsPage implements OnInit {
 
   onLoadAppareil(appareilData) {
     this.navParamsService.setData(appareilData);
-    this.router.navigate(['single-appareil']);
   }
 }

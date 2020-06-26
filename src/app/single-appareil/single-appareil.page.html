@@ -1,13 +1,17 @@
-<ion-header>
+<ion-header align="center">
   <ion-toolbar>
-    <ion-buttons slot="start"><ion-back-button></ion-back-button></ion-buttons>
+    <ion-back-button slot="start"></ion-back-button>
     <ion-title><img src="assets/icon/logo.jpg" alt="logo"></ion-title>
   </ion-toolbar>
 </ion-header>
 
 
 <ion-content class="ion-padding">
-  <p> nom de l'appareil : {{appareil.name}}</p>
-  <p>description :
-      {{appareil.description}}</p>
+  <ion-item>
+    nom de l'appareil : {{appareil.name}}
+    description : {{appareil.description}}
+  </ion-item>
+
+  <p> </p>
+  <p>
 </ion-content>

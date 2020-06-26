@@ -4,6 +4,9 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content class="ion-padding">
+  <h3>historique des commandes : </h3>
+  <ion-list>
+    <ion-item *ngFor="let commande of historique" (click)="onLoadCommande(commande)" routerLink="/single-appareil"> {{commande.name + " " + commande.total}} </ion-item>
+  </ion-list>
 </ion-content>
