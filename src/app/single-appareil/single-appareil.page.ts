@@ -7,12 +7,10 @@ import {DataService} from "../services/data.service";
   styleUrls: ['./single-appareil.page.scss'],
 })
 export class SingleAppareilPage implements OnInit {
-  name: string;
+  private appareil;
 
   constructor(private dataNav: DataService) {
-    console.log(dataNav.getData())
-    this.name = dataNav.getData();
-    console.log(name)
+    this.appareil = dataNav.getData();
   }
 
   ngOnInit() {

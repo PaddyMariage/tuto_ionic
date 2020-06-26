@@ -21,13 +21,13 @@ export class AppareilsPage implements OnInit {
     }
   ];
   constructor(private navParamsService:DataService,
-              private router: Router) { }
+              private router: Router){ }
 
   ngOnInit() {
   }
 
-  onLoadAppareil(name: string) {
-    this.navParamsService.setData(name);
+  onLoadAppareil(appareilData) {
+    this.navParamsService.setData(appareilData);
     this.router.navigate(['single-appareil']);
   }
 }

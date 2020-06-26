@@ -1,11 +1,13 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start"><ion-back-button></ion-back-button></ion-buttons>
-    <img src="assets/icon/logo.jpg" alt="logo">
+    <ion-title><img src="assets/icon/logo.jpg" alt="logo"></ion-title>
   </ion-toolbar>
 </ion-header>
 
 
 <ion-content class="ion-padding">
-  <p> nom de l'appareil : {{dataNav.getData()}}</p>
+  <p> nom de l'appareil : {{appareil.name}}</p>
+  <p>description :
+      {{appareil.description}}</p>
 </ion-content>

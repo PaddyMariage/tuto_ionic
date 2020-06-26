@@ -1,11 +1,13 @@
-<ion-header>
+<ion-header align-title="center" >
+  <ion-buttons slot="start"><ion-back-button></ion-back-button></ion-buttons>
   <ion-toolbar>
-    <ion-buttons slot="start"><ion-back-button></ion-back-button></ion-buttons>
-    <img src="assets/icon/logo.jpg" alt="logo">
+    <ion-title><img src="assets/icon/logo.jpg" alt="logo"></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-  <p>Liste dynamique des appareils : </p>
-  <ion-item *ngFor="let appareil of tabAppareils" (click)="onLoadAppareil(appareil.name)" routerLink="/single-appareil" router-direction="forward"> {{appareil.name}} - {{appareil.description}} </ion-item>
+  <p>Liste dynamique des appareils :</p>
+  <ion-list>
+    <ion-item *ngFor="let appareil of tabAppareils" (click)="onLoadAppareil(appareil)" routerLink="/single-appareil" router-direction="forward"> {{appareil.name}} </ion-item>
+  </ion-list>
 </ion-content>

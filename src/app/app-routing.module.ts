@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'single-appareil',
     loadChildren: () => import('./single-appareil/single-appareil.module').then( m => m.SingleAppareilPageModule)
   },
+  {
+    path: 'historique',
+    loadChildren: () => import('./historique/historique.module').then( m => m.HistoriquePageModule)
+  },
 ];
 
 @NgModule({
